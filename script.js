@@ -71,3 +71,27 @@ function setUpGrid(size) {
 function setCurrentMode(newMode) {
     currentMode = newMode
 }
+
+let isMousePressed = false;
+document.body.addEventListener('mousedown', () => (isMousePressed = true));
+document.body.addEventListener('mouseup', () => (isMousePressed = false));
+
+function changeColor(e) {
+    if (e.type === 'mouseover' && !isMousePressed) return
+    if (currentMode === 'rainbow') {
+        const randomR = Math.floor(Math.random() * 256)
+        const randomG = Math.floor(Math.random() * 256)
+        const randomB = Math.floor(Math.random() * 256)
+        e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+    } else if (currentMode === 'color') {
+        e.target.style.backgroundColor = currentColor
+    } else if (currentMode === 'eraser') {
+        e.target.style.backgroundColor = '#fefefe'
+    }
+}
+
+function setCurrentColor(newColor) {
+    currentColor = newColor
+}
+
+setUpGrid(currentSize);
