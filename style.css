@@ -59,3 +59,26 @@ html {
     min-height: calc(100vh - 30vh);
     padding: 20px;
 }
+
+.buttons {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    width: 110px;
+    height: 35px;
+    border: 2px solid #3D405B;
+    border-radius: 5px;
+    color: #3D405B;
+    font-size: 1rem;
+    background-color: white;
+    font-family: 'Andika', sans-serif;
+}
+
+button.active {
+    background-color: #3D405B;
+    color: #fff;
+}
+
+
+.buttons:hover {
+    transform: scale(1.05);
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.4), 5px 5px 8px rgba(0, 0, 0, 0.4), 0 5px 8px rgba(0, 0, 0, 0.4);
+}
