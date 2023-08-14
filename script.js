@@ -10,3 +10,14 @@ const header = document.getElementById('header');
 let currentMode = 'color';
 let currentColor = '#3D405B';
 let currentSize = 16;
+
+rainbowBtn.addEventListener('click', () => setCurrentMode('rainbow'));  
+rainbowBtn.addEventListener('click', () => handleButtonClick(rainbowBtn));
+colorBtn.addEventListener('click', () => setCurrentMode('color'));
+colorBtn.addEventListener('click', () => handleButtonClick(colorBtn));
+eraserBtn.addEventListener('click', () => setCurrentMode('eraser'));
+eraserBtn.addEventListener('click', () => handleButtonClick(eraserBtn));
+clearBtn.addEventListener('click', () => reloadGrid()); 
+sliderInput.addEventListener('change', (e) => changeGridSize(e.target.value));
+sliderInput.addEventListener('mousemove', (e) => changeSizeValue(e.target.value));
+colorPicker.addEventListener('input', (e) => setCurrentColor(e.target.value));
