@@ -155,3 +155,84 @@ button.active {
     align-items: center;
     gap: 30px;
 }
+
+#grid-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3D405B;
+    border-radius: 5px;
+    height: 25px;
+    width: 70px;
+    background-color: #fff;
+    color: #3D405B;
+    margin-top: 50px;
+}
+
+#range-container {
+    display: grid;
+    height: 100%;
+    text-align: center;
+    place-items: center;
+}
+
+.range {
+    height: 80px;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #3D405B;
+    padding: 0 65px 0 45px;
+}
+
+.range .field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.range .field .value {
+    position: absolute;
+    font-size: 17px;
+    font-weight: 400;
+    color: #3D405B; 
+}
+
+.range .field .value.left {
+    left: -22px;
+}
+
+.range .field .value.right {
+    right: -40px;
+}
+
+.range .field #slider-input {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.range .field #slider-input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #3D405B;
+    border-radius: 50%;
+    border: 1px solid #3D405B;
+    transition: transform 0.2s ease-in-out;
+}
+
+.range .field #slider-input::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+.range .field #slider-input::-moz-range-progress {
+    background: #3D405B;
+}
