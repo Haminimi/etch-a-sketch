@@ -21,3 +21,13 @@ clearBtn.addEventListener('click', () => reloadGrid());
 sliderInput.addEventListener('change', (e) => changeGridSize(e.target.value));
 sliderInput.addEventListener('mousemove', (e) => changeSizeValue(e.target.value));
 colorPicker.addEventListener('input', (e) => setCurrentColor(e.target.value));
+
+function handleButtonClick(clickedBtn) {
+    [rainbowBtn, eraserBtn, colorBtn].forEach(btn => {
+    btn.classList.toggle('active', btn === clickedBtn);
+    });
+}
+
+clearBtn.addEventListener('mousedown', () => clearBtn.classList.add('active'));
+clearBtn.addEventListener('mouseup', () => clearBtn.classList.remove('active'));
+clearBtn.addEventListener('mouseleave', () => clearBtn.classList.remove('active'));
