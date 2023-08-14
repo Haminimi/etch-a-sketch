@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Andika&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="header">Etch a Sketch</div>
+    
+    <div id="main">
+        <div id="settings-left">
+            <div id="color-picker-container">
+                <input id="color-picker" type="color" value="#3D405B"/>
+            </div>
+            <button class="buttons active" id="color">Color</button>
+            <button class="buttons" id="rainbow">Rainbow</button>
+            <button class="buttons" id="eraser">Eraser</button>
+        </div>
+
+        <div id="grid"></div>
+
+        <div id="settings-right">
+            <div id="settings-right-container">
+                <button class="buttons" id="clear">Clear</button>
+                <div id="grid-size">16 x 16</div>
+
+                <div id="range-container">
+                    <div class="range">
+                        <div class="field">
+                            <div class="value left">0</div>
+                            <input id="slider-input" type="range" value="16" min="1" max="99"/>
+                            <div class="value right">99</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="footer">
+        <span>Built by Haminimi&nbsp;</span>
+        <a href="https://github.com/Haminimi" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
