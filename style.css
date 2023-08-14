@@ -236,3 +236,54 @@ button.active {
 .range .field #slider-input::-moz-range-progress {
     background: #3D405B;
 }
+
+.grid-element {
+    user-select: none;
+}
+
+.fa-github {
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 1250px) {
+    #grid {
+        width: 400px;
+        height: 400px;
+    }
+
+    #settings-left {
+        width: 270px;
+        height: 340px;
+    }
+
+    #settings-right {
+        width: 270px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 1070px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #grid {
+        width: 550px;
+        height: 550px;
+    }
+
+    #settings-left {
+        width: 290px;
+        height: 420px;
+    }
+
+    #settings-right {
+        width: 290px;
+        height: 420px;
+    }
+}
