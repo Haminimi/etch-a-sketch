@@ -23,3 +23,39 @@ html {
     height: 100%;
     font-size: 18px;
 }
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E07A5F;
+    color: white;
+    height: 15vh;
+    width: 100%;
+    font-size: 3.5rem;
+    border-bottom: 3px solid white;
+    font-family: 'Oswald', sans-serif;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E07A5F;
+    color: white;
+    height: 15vh;
+    width: 100%;
+    font-size: 2rem;
+    border-top: 3px solid white;
+    font-family: 'Oswald', serif;
+}
+
+#main {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #81B29A;
+    align-items: center;
+    min-height: calc(100vh - 30vh);
+    padding: 20px;
+}
