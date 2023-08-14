@@ -1,0 +1,25 @@
+/* Color Palette:
+Terra cotta: #E07A5F
+Muted sage green: #81B29A
+Deep slate blue: #3D405B
+Antique white: #F4F1DE
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Andika', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+    font-size: 18px;
+}
