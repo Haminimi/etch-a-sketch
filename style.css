@@ -125,3 +125,33 @@ button.active {
 #color-picker::-moz-color-swatch {
     border-radius: 50%;
 }
+
+#grid {
+    height: 550px;
+    width: 550px;
+    border: 3px solid white;
+    display: grid;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.4), 5px 5px 8px rgba(0, 0, 0, 0.4), 0 5px 8px rgba(0, 0, 0, 0.4);
+    margin: 30px;
+}
+
+#settings-right {
+    height: 420px;
+    width: 290px;
+    background-color: #F4F1DE;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#settings-right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
