@@ -31,3 +31,22 @@ function handleButtonClick(clickedBtn) {
 clearBtn.addEventListener('mousedown', () => clearBtn.classList.add('active'));
 clearBtn.addEventListener('mouseup', () => clearBtn.classList.remove('active'));
 clearBtn.addEventListener('mouseleave', () => clearBtn.classList.remove('active'));
+
+function changeGridSize(value) {
+    setCurrentSize(value)
+    changeSizeValue(value)
+    reloadGrid()
+}
+
+function setCurrentSize(newSize) {
+    currentSize = newSize;
+}
+
+function changeSizeValue(value) {
+    gridSize.innerHTML = `${value} x ${value}`;
+}
+
+function reloadGrid() {
+    clearGrid()
+    setUpGrid(currentSize)
+}
