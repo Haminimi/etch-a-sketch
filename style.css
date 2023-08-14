@@ -287,3 +287,45 @@ button.active {
         height: 420px;
     }
 }
+
+@media (max-width: 650px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #grid {
+        width: 400px;
+        height: 400px;
+    }
+
+    #settings-left {
+        width: 270px;
+        height: 340px;
+    }
+
+    #settings-right {
+        width: 270px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 480px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #grid {
+        width: 300px;
+        height: 300px;
+    }
+
+    #settings-left {
+        width: 270px;
+        height: 340px;
+    }
+
+    #settings-right {
+        width: 270px;
+        height: 340px;
+    }
+}
