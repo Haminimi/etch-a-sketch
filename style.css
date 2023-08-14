@@ -82,3 +82,46 @@ button.active {
     transform: scale(1.05);
     box-shadow: -5px 5px 8px rgba(0, 0, 0, 0.4), 5px 5px 8px rgba(0, 0, 0, 0.4), 0 5px 8px rgba(0, 0, 0, 0.4);
 }
+
+#settings-left {
+    height: 420px;
+    width: 290px;
+    background-color: #F4F1DE;
+    border: 2px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+
+#color-picker:hover {
+    transform: scale(1.1);
+}
+
+#color-picker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    appearance: none;
+    width: 80px;
+    border:none;
+    height: 80px;
+    background: transparent;
+    background-position: -10%;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 50%;
+}
+
+
+#color-picker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#color-picker::-moz-color-swatch {
+    border-radius: 50%;
+}
