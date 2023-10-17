@@ -22,7 +22,8 @@ The Etch A Sketch [web app](https://haminimi.github.io/etch-a-sketch/) built by 
 Code is partially influenced by [Michał Osman](https://github.com/michalosman)'s [implementation](https://github.com/michalosman/etch-a-sketch) of the project.
 ## Author
 - [GitHub](https://github.com/Haminimi)
-- Email: haminimi.dev@gmail.com
+- [Exercism](https://exercism.org/profiles/Haminimi)
 - [LeetCode](https://leetcode.com/Haminimi/)
+- Email: haminimi.dev@gmail.com
 - LinkedIn: A profile will be available at the time I am job ready
 
